@@ -1,0 +1,36 @@
+Step: build-step-credential-initializer-wlpm9:
+
+Unable to retrieve container logs for docker://c268cf696a3edc24cc6f8f453dc63f4cc427f0db2d9d55523bd7ba6280b85729
+Step: build-step-working-dir-initializer-kgw94:
+
+Unable to retrieve container logs for docker://c695f1da0d33f15b2861136ebaed8e3b648031d7a15fec514c6e449bee29b129
+Step: build-step-place-tools:
+
+Unable to retrieve container logs for docker://d58554f128470a6ce138acec62f4d645fe1323bb127f660b9b3fb1ee7abe1c46
+Step: build-step-git-source-jenkins-x-environment-tekton-mo-dcl4t:
+
+{"level":"warn","ts":1565190050.6633978,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565190052.6595125,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/environment-tekton-mole-staging @ c57e5057d6e499d7a6eb973c7528fab8e0fabc16 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-07T15:00:57Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:d72200f1c86c9bbeb9ba3bd4f748db9d4b67250b,5:c57e5057d6e499d7a6eb973c7528fab8e0fabc16
+ran git fetch --unshallow origin c57e5057d6e499d7a6eb973c7528fab8e0fabc16: d72200f1c86c9bbeb9ba3bd4f748db9d4b67250b: in 
+ran git checkout master in 
+ran git reset --hard d72200f1c86c9bbeb9ba3bd4f748db9d4b67250b in 
+ran clean --force -d . in 
+ran git merge c57e5057d6e499d7a6eb973c7528fab8e0fabc16 in 
+Step: build-step-build-helm-build:
+
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Read credentials for https://storage.googleapis.com/chartmuseum.jenkins-x.io from vault helm/repos
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Read credentials for http://jenkins-x-chartmuseum:8080 from vault helm/repos
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Read credentials for http://chartmuseum.jenkins-x.io from vault helm/repos
+Successfully added Helm repository chartmuseum.jenkins-x.io.
